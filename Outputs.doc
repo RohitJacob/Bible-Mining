@@ -1,0 +1,12 @@
+
+#Outputs - top 10 words in descending order
+frequency.sortBy(lambda x: x[1], False).take(10)
+[(u'the', 63924), (u'and', 51696), (u'that', 12913), (u'shall', 9838), (u'unto', 8997), (u'for', 8970), (u'his', 8473), (u'lord', 7963), (u'they', 7376), (u'him', 6652)]
+
+#Outputs - top 10 words in ascending order
+frequency.sortBy(lambda x: x[1], True).take(10)
+[(u'prices', 1), (u'shammuah', 1), (u'hough', 1), (u'intercessor', 1), (u'chesed', 1), (u'bethanoth', 1), (u'also,', 1), (u'broiled', 1), (u'complainers', 1), (u'haughtily', 1)]
+
+#Outputs - Count of final RDD
+frequency.count()
+12768
